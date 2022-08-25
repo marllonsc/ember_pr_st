@@ -1,0 +1,14 @@
+#steps
+
+ember init
+
+create jsconfig.json
+
+npm stat  -> for rum the application
+
+#get css on -> bootstrapcdn.com
+
+      # css and font awesome
+
+ember install ember-cli-sass
+
