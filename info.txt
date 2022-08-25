@@ -4,11 +4,60 @@ ember init
 
 create jsconfig.json
 
-npm stat  -> for rum the application
+npm stat | ember s | ng serve  -> for rum the application
 
 #get css on -> bootstrapcdn.com
 
       # css and font awesome
 
+rename app.css to  app.scss
+
 ember install ember-cli-sass
+
+ember-cli-build.js
+
+    module.exports = function (defaults) {
+    let app = new EmberApp(defaults, {
+      // Add options here
+      sassOptions:{
+        extension: "scss",
+      }
+    });
+
+# ember g route clothes  -> to create a route called clothes
+
+clothes.hbs -> is like the html page
+
+ember g route clothes/t-shit-test.js -> to create a route insade other router
+
+ember g route clothes/index  -> to create a index page to a route
+
+# define a route dynamic
+
+    ember g route item
+
+    this.route('item', { path: '/item/:item_id' });
+
+    in item.js
+
+        export default class ItemRoute extends Route {
+          model(params) {
+            const { item_id } = params;
+
+            return item_id;
+          }
+        }
+
+
+# define a not found page
+
+  ember g route not-found
+
+  this.route('not-found', {path: '/*path'});
+
+
+
+
+
+
 
