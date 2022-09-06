@@ -55,6 +55,18 @@ ember g route clothes/index  -> to create a index page to a route
 
   this.route('not-found', {path: '/*path'});
 
+# To remove routes
+
+  ember destroy route
+
+________________
+
+ember g route index && ember g route cart
+
+#To create a controller
+
+  ember g controller cart
+
 
 
 
