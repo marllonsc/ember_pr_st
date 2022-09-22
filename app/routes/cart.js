@@ -6,7 +6,7 @@ export default class CartRoute extends Route {
     return itens;
   }
 
- /* setupController(controller, model){
+  /* setupController(controller, model){
     super.setupController(controller, model);
     const subtotal = model.reduce((acc, item) => {
       return acc + item.price;

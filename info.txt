@@ -67,9 +67,17 @@ ember g route index && ember g route cart
 
   ember g controller cart
 
+# to create a component
+
+    ember g component general-container
+
+    ember g component product
 
 
 
 
 
 
+
+
+  '
