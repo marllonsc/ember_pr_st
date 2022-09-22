@@ -73,6 +73,11 @@ ember g route index && ember g route cart
 
     ember g component product
 
+# create componentes inside folders and call then
+
+    ember g component product/image
+    <Product::Image/>
+
 
 
 
