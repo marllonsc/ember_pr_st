@@ -83,7 +83,7 @@ ember g route index && ember g route cart
     ember g component-class product
 
 
-# define a action
+# define a actios
 
         mport Component from '@glimmer/component';
 

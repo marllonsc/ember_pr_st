@@ -15,7 +15,7 @@
 .product-details {
   padding: 24px 32px;
   width: 60%;
-}
+
 
 .product {
   width: 500px;
@@ -33,8 +33,54 @@
   }
 }
 
+
 .item-detail-page {
   width: 100%;
   box-shadow: none;
   border-radius: 0;
 }
+
+.product-color {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  border: 4px solid #fff;
+  box-shadow:  inset 0 0 2px grey;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    content: ' ';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-radius: 50%;
+  }
+
+  &.color-red {
+    background:  #e74c3c;
+  }
+
+  &.color-black {
+    background:  black;
+  }
+
+}
+
+
+.active-red .color-red:before {
+  border: 1px solid #c0392b;
+}
+
+.active-black .color-clack:before {
+  border: 1px solid #2c3e50;
+}
+
+}
+
+
+
+
