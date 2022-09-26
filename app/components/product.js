@@ -6,6 +6,8 @@ export default class ProductComponent extends Component {
 
   @tracked color = 'red';
 
+  productImage = this.args.product.colors[0].image;
+
   @action
   onChangeColor(newColor) {
     this.color = newColor;
